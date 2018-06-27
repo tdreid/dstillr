@@ -1,0 +1,21 @@
+{
+  "name": "dstillr",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dstillr.js",
+  "scripts": {
+    "build": "browserify src/dstillr.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/dstillr.min.js",
+    "build-debug": "browserify src/dstillr.js -t [ babelify --presets=env ] > ext/dstillr.min.js",
+    "test": "jest"
+  },
+  "author": "Trevor Reid <trevor.d.reid@gmail.com> (http://tdreid.github.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "jest": "^23.2.0",
+    "uglify-js": "^3.4.2"
+  }
+}

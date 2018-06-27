@@ -1,0 +1,13 @@
+{
+    "name": "dstillr",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://steemit.com/*/transfers"],
+            "run_at": "document_start",
+            "all_frames": true,
+            "js": ["dstillr.min.js"]
+        }
+    ],
+    "manifest_version": 2
+}
