@@ -1,29 +1,40 @@
-/* global MutationObserver */
+/* global chrome MutationObserver */
 
-deleteElements('');
+chrome.storage.sync.get(['dstillr'], r => {
+  distillTargets('.TransferHistoryRow__text', r.dstillr.split(/\s/));
+});
 
-function deleteElements(selector) {
-  deleteThese(document.querySelectorAll(selector));
+function distillTargets(selector, names = []) {
+  deleteBlacklistedTargets(document.querySelectorAll(selector), names);
 
-  var mo = new MutationObserver(mutations => {
-    for (var i = 0; i < mutations.length; i++) {
-      var nodes = mutations[i].addedNodes;
-      for (var j = 0; j < nodes.length; j++) {
-        var n = nodes[j];
-        if (n.nodeType != 1) // operate on Node.ELEMENT_NODE only
+  const mo = new MutationObserver(mutations => {
+    for (let i = 0; i < mutations.length; i++) {
+      let nodes = mutations[i].addedNodes;
+      for (let j = 0; j < nodes.length; j++) {
+        let n = nodes[j];
+        if (n.nodeType != 1)
+          // operate on Node.ELEMENT_NODE only
           continue;
-        deleteThese(n.matches(selector) ? [n] : n.querySelectorAll(selector));
+        deleteBlacklistedTargets(
+          n.matches(selector) ? [n] : n.querySelectorAll(selector),
+          names
+        );
       }
     }
   });
+
   mo.observe(document, { subtree: true, childList: true });
   document.addEventListener('DOMContentLoaded', function() {
     mo.disconnect();
   });
 
-  function deleteThese(nodes) {
+  function deleteBlacklistedTargets(nodes, names = []) {
     [].forEach.call(nodes, function(node) {
-      node.remove();
+      names.forEach(name => {
+        if (node.querySelector(`[href='/@${name}']`)) {
+          node.parentNode.remove();
+        }
+      });
     });
   }
 }
