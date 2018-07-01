@@ -1,6 +1,6 @@
 {
     "name": "dstillr",
-    "version": "0.1.15",
+    "version": "0.1.31",
     "permissions": [
         "storage"
         ],
