@@ -6,6 +6,8 @@
   "scripts": {
     "build": "browserify src/dstillr.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/dstillr.min.js",
     "build-debug": "browserify src/dstillr.js -t [ babelify --presets=env ] > ext/dstillr.min.js",
+    "build-popup": "browserify src/popup.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/popup.min.js",
+    "build-popup-debug":"browserify src/popup.js -t [ babelify --presets=env ] > ext/popup.min.js",
     "test": "jest"
   },
   "author": "Trevor Reid <trevor.d.reid@gmail.com> (http://tdreid.github.io)",
