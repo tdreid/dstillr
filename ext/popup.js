@@ -4,7 +4,7 @@ document.body.onload = function() {
   chrome.storage.sync.get("dstillr", function(items) {
     if (!chrome.runtime.error) {
       console.log(items);
-      document.getElementById("data").innerText = items.dstillr;
+      document.getElementById("text").value = items.dstillr;
     }
   });
 };
