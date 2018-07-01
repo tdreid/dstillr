@@ -13,7 +13,7 @@ document.getElementById("set").onclick = function() {
   var d = document.getElementById("text").value;
   chrome.storage.sync.set({ "dstillr" : d }, function() {
     if (chrome.runtime.error) {
-      console.log("Runtime error.");
+      console.log("dstillr runtime error.");
     }
   });
   window.close();
