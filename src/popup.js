@@ -3,7 +3,7 @@
 document.body.onload = function() {
   chrome.storage.sync.get('dstillr', function(items) {
     if (!chrome.runtime.error) {
-      document.getElementById('text').value = items.dstillr;
+      document.getElementById('text').value = items.dstillr || '';
     }
   });
 };
