@@ -7,7 +7,7 @@
       font-family: sans-serif;
     } 
     body {
-      margin: 0;
+      margin: 5px;
     }
     button, textarea {
       color: inherit;
@@ -16,6 +16,10 @@
     }
     button {
       cursor: pointer;
+    }
+    div {
+      color: darkgray;
+      margin: .25rem;
     }
     textarea {
       resize: none;
@@ -32,7 +36,8 @@
 </head>
 <body>
   <textarea id="text"></textarea>
-  <button id="set">Set</button>
+  <div>Enter one account per line or seperate multiple accounts with spaces.</div>
+  <button id="set">Set Block List</button>
   <script src="popup.min.js"></script>
 </body>
 </html>
