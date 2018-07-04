@@ -17,12 +17,12 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
 1. Enable **Developer mode** via the switch at upper-right.
 1. Click on **Load unpacked**.
 1. Select the local folder containing dstillr and click **OK**.
-1. In Chrome you should see the dstillr icon ![](/ext/dstillr-2-16.png) in your browser toolbar.
+1. In Chrome you should see the dstillr icon ( ![](/ext/dstillr-2-16.png) ) in your browser toolbar.
 
 ## Installation — Chrome Web Store [**COMING SOON**]
 
 ## Usage
-Click on the the dstillr icon ![](/ext/dstillr-2-16.png) in your browser toolbar.
+Click on the the dstillr icon ( ![](/ext/dstillr-2-16.png) ) in your browser toolbar.
 Enter one account per line or seperate multiple accounts with spaces. You can 
 combine both methods of seperating account names. 
 
@@ -51,4 +51,5 @@ to see the new results.
 
 ## Notices
    **This project is not affiliated with nor endorsed by:** 
+   
    Steemit.com; Steemit, Inc.; Google Chrome; Google LLC; Alphabet, Inc.
