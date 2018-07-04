@@ -16,6 +16,11 @@
 
 /* global chrome */
 
+/** 
+ * When the icon's extension is clicked retrieve the dstillr 
+ * blocked account list from storage if it exists. Display it 
+ * on the popup user interface. Otherwise leave the textarea blank
+ */
 document.body.onload = function() {
   chrome.storage.sync.get('dstillr', function(items) {
     if (!chrome.runtime.error) {
@@ -24,6 +29,11 @@ document.body.onload = function() {
   });
 };
 
+/**
+ * Save the dstillr block list and close the popup user
+ * interface when the user clicks the 'Set Block List' 
+ * button.
+ */
 document.getElementById('set').onclick = function() {
   var d = document.getElementById('text').value;
   chrome.storage.sync.set({ dstillr: d }, function() {
