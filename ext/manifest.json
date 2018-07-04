@@ -1,11 +1,10 @@
 {
     "name": "dstillr",
-    "icons": { "16": "icon16.png",
-               "48": "icon48.png",
-              "128": "icon128.png" },    
-    "version": "0.1.51",   
     "version": "0.1.51",
     "description": "Remove spammy messages and accounts from your wallet on Steemit.com.",
+    "icons": { "16": "dstillr-2-16.png",
+               "48": "dstillr-1-48.png",
+              "128": "dstillr-1-128.png" },    
     "permissions": [
         "storage"
         ],
