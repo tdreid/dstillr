@@ -19,7 +19,13 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
 1. Select the local folder containing dstillr and click **OK**.
 1. In Chrome you should see the dstillr icon ( ![](/ext/dstillr-2-16.png) ) in your browser toolbar.
 
-## Installation — Chrome Web Store [**COMING SOON**]
+## Installation — Chrome Web Store
+If you only want to use the filter without hacking you can install directly from
+the Chrome Web Store:
+
+http://bit.ly/dstillr-chrome-ws
+
+This way you will also get automatic updates.
 
 ## Usage
 Click on the the dstillr icon ( ![](/ext/dstillr-2-16.png) ) in your browser toolbar.
