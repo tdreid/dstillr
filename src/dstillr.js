@@ -16,10 +16,21 @@
 
 /* global chrome MutationObserver */
 
+/** 
+ * Retrieve the dtillr list of blocked accounts from storage
+ * split it into an array of account names and pass to the
+ * main function to process all transaction history rows on
+ * the wallet page.
+ */
 chrome.storage.sync.get(['dstillr'], r => {
   distillTargets('.TransferHistoryRow__text', r.dstillr.split(/\s/));
 });
 
+/**
+ * Remove any block listed nodes already attached to the DOM. Then
+ * attach a mutation observer to delete any further block listed
+ * nodes added to the DOM.
+ */
 function distillTargets(selector, names = []) {
   deleteBlacklistedTargets(document.querySelectorAll(selector), names);
 
@@ -44,6 +55,11 @@ function distillTargets(selector, names = []) {
     mo.disconnect();
   });
 
+  /**
+   * Remove nodes from a nodelist that contain 
+   * any child element with an href attribute
+   * referring to a block listed account name
+   */
   function deleteBlacklistedTargets(nodes, names = []) {
     [].forEach.call(nodes, function(node) {
       names.forEach(name => {
