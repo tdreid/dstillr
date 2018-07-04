@@ -1,6 +1,14 @@
 # dstillr
 Remove spammy messages and accounts from your wallet on Steemit.com with dstillr, an extension for Google Chrome.
 
+## Build
+1. This repo includes the unpacked extension.  You should not need to build 
+   unless you want to debug or change something.  If that's the case...
+1. You'll need the dev dependencies so run `npm install`.
+1. Use `npm run build` to transpile and minify changes in [src/*.js](src/)
+   to [ext/*.min.js](ext/).  To transpile a more human readable 
+   script for debugging you can use `npm run build-debug` instead.
+
 ## License
    Copyright 2018 Trevor D. Reid
 
