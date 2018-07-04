@@ -9,6 +9,31 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
    to [ext/*.min.js](ext/).  To transpile a more human readable 
    script for debugging you can use `npm run build-debug` instead.
 
+## Installation — unpacked in developer mode
+1. The the [/ext](ext/) folder contains the unpacked extension. Save the 
+   contents of this folder locally to a place they will remain while in use.
+1. From Chrome's menu select **More tools** > **Extensions** or browse to:
+   `chrome://extensions`.
+1. Enable **Developer mode** via the switch at upper-right.
+1. Click on **Load unpacked**.
+1. Select the local folder containing dstillr and click **OK**.
+1. In Chrome you should see the dstillr icon ![](/ext/dstillr-2-16.png) in your browser toolbar.
+
+## Installation — Chrome Web Store [**COMING SOON**]
+
+## Usage
+Click on the the dstillr icon ![](/ext/dstillr-2-16.png) in your browser toolbar.
+Enter one account per line or seperate multiple accounts with spaces. You can 
+combine both methods of seperating account names. 
+
+![](/doc/img/usage-example.png)
+
+When you visit any user's
+wallet page (e.g `https://steemit.com/@someaccount/transfers`) on steemit.com 
+all transactions from accounts on the block list will be suppressed.  The block
+list is processed when the page loads. If you update the list refresh the page 
+to see the new results.
+
 ## License
    Copyright 2018 Trevor D. Reid
 
@@ -25,5 +50,5 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
    limitations under the License.
 
 ## Notices
-   - This project is not affiliated with nor endorsed by: Steemit.com; Steemit, Inc.
-   - This project is not affiliated with nor endorsed by: Google Chrome; Google LLC; Alphabet, Inc.
+   **This project is not affiliated with nor endorsed by:** 
+   Steemit.com; Steemit, Inc.; Google Chrome; Google LLC; Alphabet, Inc.
