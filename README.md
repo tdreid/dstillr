@@ -1,5 +1,5 @@
 # dstillr
-Remove spammy messages and accounts from your wallet on Steemit.com with, dstillr, an extension for Google Chrome.
+Remove spammy messages and accounts from your wallet on Steemit.com with dstillr, an extension for Google Chrome.
 
 ## License
    Copyright 2018 Trevor D. Reid
