@@ -18,4 +18,4 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
 
 ## Notices
    - This project is not affiliated with nor endorsed by: Steemit.com; Steemit, Inc.
-   - This project is not affiliated with nor endorsed by: Google Chrome; Google, Inc.
+   - This project is not affiliated with nor endorsed by: Google Chrome; Google LLC; Alphabet, Inc.
