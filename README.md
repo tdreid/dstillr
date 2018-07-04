@@ -24,7 +24,7 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
 ## Usage
 Click on the the dstillr icon ( ![](/ext/dstillr-2-16.png) ) in your browser toolbar.
 Enter one account per line or separate multiple accounts with spaces. You can 
-combine both methods of seperating account names. 
+combine both methods of separating account names. 
 
 ![](/doc/img/usage-example.png)
 
