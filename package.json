@@ -1,7 +1,7 @@
 {
   "name": "dstillr",
   "version": "1.0.1",
-  "description": "",
+  "description": "Remove spammy messages and accounts from your wallet on Steemit.com an extension for Google Chrome",
   "main": "dstillr.js",
   "scripts": {
     "build": "browserify src/dstillr.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/dstillr.min.js",
