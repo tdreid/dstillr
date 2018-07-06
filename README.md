@@ -10,7 +10,7 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
    script for debugging you can use `npm run build-debug` instead.
 
 ## Installation — unpacked in developer mode
-1. The the [/ext](ext/) folder contains the unpacked extension. Save the 
+1. The [/ext](ext/) folder contains the unpacked extension. Save the 
    contents of this folder locally to a place they will remain while in use.
 1. From Chrome's menu select **More tools** > **Extensions** or browse to:
    `chrome://extensions`.
