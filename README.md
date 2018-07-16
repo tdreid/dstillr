@@ -23,7 +23,7 @@ Remove spammy messages and accounts from your wallet on Steemit.com with dstillr
 If you only want to use the filter without hacking you can install directly from
 the Chrome Web Store:
 
-http://bit.ly/dstillr-chrome-ws
+https://bit.ly/dstillr-chrome-ws
 
 This way you will also get automatic updates.
 
