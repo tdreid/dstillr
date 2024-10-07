@@ -1,4 +1,4 @@
-# dstillr
+# dstillr ([THIS PROJECT HAS BEEN ARCHIVED](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories))
 Remove spammy messages and accounts from your wallet on Steemit.com with dstillr, an extension for Google Chrome.
 
 ## Build
